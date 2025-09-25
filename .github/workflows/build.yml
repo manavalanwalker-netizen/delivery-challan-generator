@@ -29,25 +29,25 @@ jobs:
         pyinstaller --onefile --windowed --name "DeliveryChallanGenerator" main.py
     
     - name: Upload artifact 1
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: delivery-challan-generator-windows-exe
         path: dist/DeliveryChallanGenerator.exe
 
     - name: Upload artifact 2
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: build-logs
         path: build/
     
     - name: Upload artifact 3
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dist-folder
         path: dist/
     
     - name: Upload artifact 4
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: spec-file
         path: DeliveryChallanGenerator.spec
